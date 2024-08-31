@@ -36,7 +36,7 @@ print("# Developed by: Abdulmlk Alharbi | Abdulaziz AbuQayyan")
 print()
 
 # استبدل YOUR_VIRUSTOTAL_API_KEY بمفتاح API الخاص بك
-API_KEY = '187d1128788ecebb23c955d1e5d43f650d055aa8be7f38f208290cde588e6cd2'
+API_KEY = '187d1128788ecebb23c955d1e5d43f650d055aa8be7f38f208290cde588e'
 BASE_URL = 'https://www.virustotal.com/api/v3'
 
 def get_vt_report(resource, resource_type):
