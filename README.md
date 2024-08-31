@@ -33,7 +33,7 @@ pip install requests pandas tqdm openpyxl
 virustotal-list-scanner-script
 ```
 
-**linux:**
+**Linux:**
 
 **Clone the Repository**
 ```
