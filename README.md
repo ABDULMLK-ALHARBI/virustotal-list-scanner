@@ -12,16 +12,17 @@ The VirusTotal List Scanner is a Python-based script designed to automate the pr
 
 ## Prerequisites
 
-- Python 3.x
+- Python 
 - The following Python libraries:
   - `requests`
   - `pandas`
   - `tqdm`
+  - `openpyxl`
 
 Install the required libraries using:
 
 ```bash
-pip install requests pandas tqdm
+pip install requests pandas tqdm openpyxl
 ```
 ## Usage
 **Clone the Repository**
