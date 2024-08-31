@@ -77,4 +77,4 @@ This command will display a list of all installed packages along with their vers
 
 
 ##
->> Developed by: Abdulmlk Alharbi | Abdulaziz AbuQayyan 
+>> Developed by : Abdulmlk Alharbi | Abdulaziz AbuQayyan 
