@@ -34,6 +34,7 @@ virustotal-list-scanner-script
 ```
 
 **linux:**
+
 **Clone the Repository**
 ```
 git clone https://github.com/ABDULMLK-ALHARBI/virustotal-list-scanner.git
