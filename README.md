@@ -12,7 +12,8 @@ The VirusTotal List Scanner is a Python-based script designed to automate the pr
 
 ## Prerequisites
 
-- Python 
+- Python
+  
 - The following Python libraries:
   - `requests`
   - `pandas`
@@ -48,11 +49,12 @@ OR
 python script.py -i input.txt -o output.xlsx
 ```
 
+## Python libraries 
 To list all the Python libraries installed in your environment, you can use the following command:
 
 ```
 pip list
 ```
-
+This command will display a list of all installed packages along with their versions.
 
 
