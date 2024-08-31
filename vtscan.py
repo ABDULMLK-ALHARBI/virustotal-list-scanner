@@ -1,7 +1,7 @@
 import os
 import argparse
 
-# Check for required libraries
+
 required_libraries = {
     'requests': 'requests',
     'pandas': 'pandas',
@@ -19,9 +19,9 @@ import requests
 import pandas as pd
 import time
 from datetime import datetime, timezone
-from tqdm import tqdm  # Import tqdm for the progress bar
+from tqdm import tqdm 
 
-# Example logo to display
+
 logo = r"""
 ____    ____ .___________.        _______.  ______     ___      .__   __. 
 \   \  /   / |           |       /       | /      |   /   \     |  \ |  | 
@@ -30,12 +30,12 @@ ____    ____ .___________.        _______.  ______     ___      .__   __.
    \    /        |  |        .----)   |   |  `----./  _____  \  |  |\   | 
     \__/         |__|        |_______/     \______/__/     \__\ |__| \__| 
 """
-# Print the logo without any modifications
+
 print(logo)
 print("# Developed by: Abdulmlk Alharbi | Abdulaziz AbuQayyan")
 print()
 
-# استبدل YOUR_VIRUSTOTAL_API_KEY بمفتاح API الخاص بك
+# YOUR_VIRUSTOTAL_API_KEY 
 API_KEY = '187d1128788ecebb23c955d1e5d43f650d055aa8be7f38f208290cde588e'
 BASE_URL = 'https://www.virustotal.com/api/v3'
 
@@ -82,7 +82,7 @@ def main(input_file, output_file):
     with open(input_file, 'r') as file:
         resources = [line.strip() for line in file if line.strip()]
         
-        for resource in tqdm(resources, desc="Processing resources", unit="resource"):  # Wrap the loop with tqdm
+        for resource in tqdm(resources, desc="Processing resources", unit="resource"): 
             if '@' in resource:
                 resource_type = 'urls'
             elif len(resource) in [32, 40, 64]:
@@ -94,16 +94,16 @@ def main(input_file, output_file):
             
             result = process_resource(resource, resource_type)
             data.append(result)
-            # احترام حدود المعدل الخاص بـ VirusTotal
+           
             time.sleep(15)
     
     df = pd.DataFrame(data)
     df.to_excel(output_file, index=False)
     
-    # Print a completion message after all processing is done
+   
     print("The scan has been completed.")
     
-    # Print the absolute path of the output file
+ 
     output_file_path = os.path.abspath(output_file)
     print()
     print(f"* The output Excel file is saved at: {output_file_path}")
@@ -117,7 +117,7 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
 
-    # Ensure the output file has a .xlsx extension
+    
     if not args.output.endswith('.xlsx'):
         args.output += '.xlsx'
     
