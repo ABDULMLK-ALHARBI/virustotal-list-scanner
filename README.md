@@ -26,6 +26,8 @@ Install the required libraries using:
 pip install requests pandas tqdm openpyxl
 ```
 ## Usage
+For Windows: Dowinload virustotal-list-scanner.zip 
+
 **Clone the Repository**
 ```
 git clone https://github.com/ABDULMLK-ALHARBI/virustotal-list-scanner.git
@@ -34,12 +36,20 @@ git clone https://github.com/ABDULMLK-ALHARBI/virustotal-list-scanner.git
 cd virustotal-list-scanner
 ```
 
+
 **Set Up Your Environment**
 
-Replace the placeholder API key in script.py with your actual VirusTotal API key:
+- Replace the placeholder API key in script.py with your actual VirusTotal API key:
 ```
-API_KEY = 'your_actual_api_key_here'
+API_KEY = 'add_your_actual_api_key_here'
 ```
+
+- Add a list of resources to the file.  
+
+```
+Add_List_Here.TXT 
+```
+
 **Run the Script**
 ```
 python script.py 
