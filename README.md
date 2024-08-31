@@ -74,4 +74,5 @@ pip list
 ```
 This command will display a list of all installed packages along with their versions.
 
-
+--
+>> Developed by: Abdulmlk Alharbi | Abdulaziz AbuQayyan << 
