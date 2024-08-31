@@ -59,11 +59,11 @@ Add_List_Here.TXT
 
 **Run the Script**
 ```
-python script.py 
+python vtscan.py 
 ```
 OR
 ```
-python script.py -i input.txt -o output.xlsx
+python vtscan.py -i input.txt -o output.xlsx
 ```
 
 ## Python libraries 
