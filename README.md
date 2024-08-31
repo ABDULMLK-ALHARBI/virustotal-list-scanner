@@ -26,7 +26,7 @@ Install the required libraries using:
 pip install requests pandas tqdm openpyxl
 ```
 ## Usage
-For Windows : Download .zip 
+For Windows : Download ZIP 
 
 **Clone the Repository**
 ```
