@@ -57,7 +57,7 @@ API_KEY = 'add_your_actual_api_key_here'
 Add_List_Here.TXT 
 ```
 
-##Run the Script
+**Run the Script**
 ```
 python script.py 
 ```
