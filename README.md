@@ -33,7 +33,7 @@ For Windows : Download ZIP
 git clone https://github.com/ABDULMLK-ALHARBI/virustotal-list-scanner.git
 ```
 ```
-cd virustotal-list-scanner-script
+cd virustotal-list-scanner
 ```
 
 
