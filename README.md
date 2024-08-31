@@ -48,4 +48,11 @@ OR
 python script.py -i input.txt -o output.xlsx
 ```
 
+To list all the Python libraries installed in your environment, you can use the following command:
+
+```
+pip list
+```
+
+
 
