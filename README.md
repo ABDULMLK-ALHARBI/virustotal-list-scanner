@@ -26,6 +26,25 @@ pip install requests pandas tqdm
 ## Usage
 **Clone the Repository**
 ```
-git clone https://github.com/yourusername/virustotal-list-scanner.git
+git clone https://github.com/ABDULMLK-ALHARBI/virustotal-list-scanner.git
+```
+```
 cd virustotal-list-scanner
 ```
+
+**Set Up Your Environment**
+
+Replace the placeholder API key in script.py with your actual VirusTotal API key:
+```
+API_KEY = 'your_actual_api_key_here'
+```
+**Run the Script**
+```
+python script.py 
+```
+OR
+```
+python script.py -i input.txt -o output.xlsx
+```
+
+
