@@ -26,8 +26,14 @@ Install the required libraries using:
 pip install requests pandas tqdm openpyxl
 ```
 ## Usage
-For Windows : Download ZIP 
+**Windows:** 
+- Download ZIP 
 
+```
+virustotal-list-scanner-script
+```
+
+**linux:**
 **Clone the Repository**
 ```
 git clone https://github.com/ABDULMLK-ALHARBI/virustotal-list-scanner.git
