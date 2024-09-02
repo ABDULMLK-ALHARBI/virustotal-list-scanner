@@ -27,7 +27,7 @@ The VirusTotal List Scanner is a Python script designed to automate the evaluati
 `whois`
 
 
-Install the required libraries using:
+Install the required libraries :
 
 ```bash
 All pip install requests will be auto-completed by the script.
