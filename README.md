@@ -2,7 +2,7 @@
 
 ![Screenshot 2024-09-01 103149](https://github.com/user-attachments/assets/6fc6a921-4479-4406-ba5e-fb7df9aeb528)
 
-The VirusTotal List Scanner is a Python-based script designed to automate the process of checking the reputation and security status of various digital resources, such as URLs, files, IP addresses, and domains, by leveraging the VirusTotal API. This tool is particularly useful for security analysts, IT administrators, and developers who need to quickly assess the safety of multiple resources in bulk.
+The VirusTotal List Scanner is a Python script designed to automate the evaluation of the reputation and security status of various digital resources, including URLs, files, IP addresses, and domains, by utilizing the VirusTotal API. Additionally, we use WHOIS to retrieve domain registration details, further enhancing the tool's ability to provide comprehensive information. This script is particularly valuable for security analysts, IT administrators, and developers who need to efficiently assess the safety of multiple resources in bulk.
 
 ## Features
 
