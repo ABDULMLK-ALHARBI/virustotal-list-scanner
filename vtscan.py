@@ -58,9 +58,9 @@ print()
 
 # List of API keys to use
 API_KEYS = [
-    #'your_api_key_1',
-    #'your_api_key_2',
-    #'your_api_key_3',
+    '187d1128788ecebb23c955d1e5d43f650d055aa8be7f38f208290cde588e6cd2',
+    '6fea2b82dafe408313d6091be9219c2eacd4aaeff56a4200d26d2bc499f08048',
+    '8cd259d789fdbd34ef2c1708fb99aeea2f154d208d5f1eb2a27d4f9e152ff187',
     #'your_api_key_4',
     #'your_api_key_5',
     #'your_api_key_6',
@@ -136,18 +136,20 @@ def process_resource(resource, resource_type):
     report = get_vt_report(resource, resource_type)
     attributes = report.get('data', {}).get('attributes', {})
     reputation = attributes.get('reputation', 0)
-
-    if reputation == 0:
-        reputation_text = 'unclassified'
-    elif reputation < 0:
-        reputation_text = 'bad reputation'
-    else:
-        reputation_text = 'N/A'
     
     last_analysis_stats = attributes.get('last_analysis_stats', {})
     malicious = last_analysis_stats.get('malicious', 0)
     suspicious = last_analysis_stats.get('suspicious', 0)
     last_modification_date = attributes.get('last_modification_date', 'N/A')
+
+    if malicious == 0:
+        reputation_text = 'unclassified'
+    elif malicious > 0:
+        reputation_text = 'bad reputation'
+    else:
+        reputation_text = 'N/A'
+    
+    
     
     if last_modification_date != 'N/A':
         last_modification_date = datetime.fromtimestamp(last_modification_date, timezone.utc).strftime('%Y-%m-%d %H:%M:%S')
@@ -212,7 +214,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="VirusTotal List Scanner")
     parser.add_argument('-i', '--input', type=str, default='Add_List_Here.txt', help='Input file with resources to scan')
     parser.add_argument('-o', '--output', type=str, default='vt_results.xlsx', help='Output Excel file')
-    parser.add_argument('-v', '--version', action='version', version='VirusTotal Scanner 1.4')
+    parser.add_argument('-v', '--version', action='version', version='VirusTotal Scanner 1.1')
     
     args = parser.parse_args()
 
